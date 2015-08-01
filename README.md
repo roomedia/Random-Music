@@ -1,4 +1,21 @@
-# Random-Music
-1. Select folder where .mp3 or .wmv files exist.
-2. Program will make the playlist of 30 songs. (.pls format)
-3. I may update "see the tracklist function" and "play the song function"
+initUI:
+메인 다이얼로그에 들어갈 UI 설정.
+스크롤 되는 텍스트 상자랑 곡 갯수를 입력할 텍스트 상자,
+플레이리스트 설정하는 버튼 위치 설정.
+
+setPath:
+플레이리스트 버튼이 눌리면 실행되는 함수.
+플레이리스트 다이얼로그를 연다. 선택된 다이얼로그의 경로를 리턴한다.
+취소를 누르면 현재 경로를 리턴. 음악으로 간주되는 파일이 없으면 재귀호출.
+
+setPlaylist:
+플레이리스트 다이얼로그가 닫히면 실행되는 함수.
+전체 음악 파일 목록을 집합으로 만들어 플레이리스트에 저장한다.
+
+getPlaylist:
+프로그램 실행 시 실행되는 함수, setPlaylist 실행 이후에 실행되는 함수.
+플레이리스트 목록을 텍스트 박스로 불러온다.
+
+앞으로 추가할 것
+getErrorMsg:
+선택한 폴더에 음악 파일이 없을 때 뜬다.
